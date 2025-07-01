@@ -93,6 +93,8 @@ class ModelTrainer:
             if best_model_score<0.6:
                 raise CustomException("No best model found")
             logging.info(f"Best found model on both training and testing dataset")
+            
+            # Re-fit the best model with best parameters (already done in evaluate_models)
             save_object(
                 file_path=self.model_trainer_config.trained_model_file_path,
                 obj=best_model
