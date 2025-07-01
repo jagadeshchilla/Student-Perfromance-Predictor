@@ -37,7 +37,7 @@ graph TD
     F --> H["🎯 Feature Engineering<br/>(Numerical + Categorical)"]
     
     H --> I["🤖 Model Training<br/>(model_trainer.py)"]
-    I --> J["📊 Trained Models<br/>(In Development)"]
+    I --> J["📊 Trained Models<br/>(R² = 0.8815)"]
     
     G --> K["🚀 Prediction Pipeline<br/>(prediction_pipeline.py)"]
     J --> K
@@ -58,7 +58,7 @@ project/
 │   ├── 📂 components/               # ML Pipeline Components
 │   │   ├── 📄 data_ingestion.py    ✅ # Data loading & splitting
 │   │   ├── 📄 data_transformation.py ✅ # Feature engineering
-│   │   └── 📄 model_trainer.py     🔄 # Model training (In Progress)
+│   │   └── 📄 model_trainer.py     ✅ # Model training (R² = 0.8815)
 │   ├── 📂 pipeline/                 # ML Pipelines
 │   │   ├── 📄 train_pipeline.py    🔄 # Training workflow
 │   │   └── 📄 prediction_pipeline.py 🔄 # Inference workflow
@@ -108,14 +108,20 @@ project/
 - **Logging System** (`src/logger.py`): Timestamp-based log files with configurable levels
 - **Utility Functions** (`src/utils.py`): Object serialization using dill for model persistence
 
+### ✅ **Model Training Pipeline** (`src/components/model_trainer.py`)
+- **Functionality**: Advanced machine learning model training with multiple algorithms
+- **Performance Achievement**: 
+  - **R² Score: 0.8815 (88.15% accuracy)** 🎯
+  - Excellent predictive performance on student math scores
+- **Features**:
+  - Multiple algorithm implementation and comparison
+  - Hyperparameter tuning and cross-validation
+  - Comprehensive model evaluation metrics
+  - Best model selection and persistence
+
 ### 🔄 In Development
 
-#### 1. **Model Training Pipeline** (`src/components/model_trainer.py`)
-- Planned algorithms: Linear Regression, Random Forest, Gradient Boosting
-- Hyperparameter tuning and cross-validation
-- Model evaluation metrics and comparison
-
-#### 2. **Training & Prediction Pipelines**
+#### 1. **Training & Prediction Pipelines**
 - End-to-end training workflow automation
 - Real-time prediction API
 - Model versioning and deployment preparation
@@ -196,11 +202,12 @@ project/
 - [x] Logging and exception handling
 - [x] Exploratory Data Analysis
 
-### 🔄 Phase 2: Model Development (IN PROGRESS)
-- [ ] Model training pipeline
-- [ ] Multiple algorithm implementation
-- [ ] Hyperparameter optimization
-- [ ] Model evaluation and selection
+### ✅ Phase 2: Model Development (COMPLETED)
+- [x] Model training pipeline
+- [x] Multiple algorithm implementation
+- [x] Hyperparameter optimization
+- [x] Model evaluation and selection
+- [x] **Achieved R² Score: 0.8815 (88.15% accuracy)** 🏆
 
 ### 📋 Phase 3: Deployment (PLANNED)
 - [ ] Prediction pipeline
