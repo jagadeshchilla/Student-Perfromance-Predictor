@@ -152,7 +152,7 @@ project/
   - Interactive web interface for real-time predictions
   - RESTful API endpoints for model inference
   - **Premium UI/UX** with modern design language
-  - **🌐 Live at**: [http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com)
+  - **🌐 Live at**: [http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com)(This link will not work because i have deleted it)
 - **Prediction Pipeline** (`src/pipeline/prediction_pipeline.py`):
   - `PredictPipeline`: Automated inference workflow with model and preprocessor loading
   - `CustomData`: Data preprocessing and validation class
@@ -426,7 +426,7 @@ option_settings:
 ### **🎯 Production Access**
 
 #### **🌐 Live Application URL**
-**🚀 [Student Performance Predictor - LIVE DEMO](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com)**
+**🚀 [Student Performance Predictor - LIVE DEMO](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com)** (This link will not work because i have deleted it)
 
 Your ML application is live and accessible at:
 `http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com`
@@ -500,7 +500,7 @@ Your ML application is live and accessible at:
 
 **👨‍💻 Developer**: Jagadeesh  
 **📧 Email**: jagadeesh@gmail.com  
-**🌐 Live Application**: [http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com)  
+**🌐 Live Application**: [http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com)  (This link will not work because i have deleted it)
 **📂 Repository**: [GitHub - Student Performance Predictor](https://github.com/jagadeshchilla/Student-Performance-Predictor)
 
 ---
