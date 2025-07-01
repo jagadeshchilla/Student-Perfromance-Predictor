@@ -106,18 +106,38 @@ project/
 #### 3. **Infrastructure & Utilities**
 - **Custom Exception Handling** (`src/exception.py`): Detailed error tracking with file names and line numbers
 - **Logging System** (`src/logger.py`): Timestamp-based log files with configurable levels
-- **Utility Functions** (`src/utils.py`): Object serialization using dill for model persistence
+- **Utility Functions** (`src/utils.py`): 
+  - **Model Evaluation** (`evaluate_models`): GridSearchCV-based hyperparameter tuning
+  - **Object Serialization** (`save_object`, `load_object`): Model persistence using dill
+  - **Cross-validation**: 3-fold CV for robust model selection
+  - **Automated Scoring**: R² score calculation for train/test performance
 
 ### ✅ **Model Training Pipeline** (`src/components/model_trainer.py`)
-- **Functionality**: Advanced machine learning model training with multiple algorithms
+- **Functionality**: Advanced machine learning model training with comprehensive algorithm comparison
 - **Performance Achievement**: 
   - **R² Score: 0.8815 (88.15% accuracy)** 🎯
   - Excellent predictive performance on student math scores
-- **Features**:
-  - Multiple algorithm implementation and comparison
-  - Hyperparameter tuning and cross-validation
-  - Comprehensive model evaluation metrics
-  - Best model selection and persistence
+- **Algorithms Implemented**:
+  - **Random Forest Regressor** - Ensemble method with hyperparameter tuning
+  - **Decision Tree Regressor** - Tree-based algorithm with criterion optimization
+  - **Gradient Boosting Regressor** - Advanced boosting with learning rate tuning
+  - **Linear Regression** - Baseline linear model
+  - **K-Neighbors Regressor** - Instance-based learning with neighbor optimization
+  - **XGBoost Regressor** - Extreme gradient boosting with extensive tuning
+  - **CatBoost Regressor** - Gradient boosting for categorical features
+  - **AdaBoost Regressor** - Adaptive boosting with learning rate optimization
+- **Hyperparameter Tuning Features**:
+  - **GridSearchCV** with 3-fold cross-validation
+  - **Comprehensive parameter grids** for each algorithm:
+    - Decision Tree: criterion optimization
+    - Random Forest: n_estimators (8-256)
+    - Gradient Boosting: learning_rate, subsample, n_estimators
+    - XGBoost: learning_rate, n_estimators optimization
+    - CatBoost: depth, learning_rate, iterations tuning
+    - AdaBoost: learning_rate, n_estimators optimization
+    - K-Neighbors: neighbor count optimization (5-11)
+  - **Automated best model selection** based on R² scores
+  - **Model persistence** using dill serialization
 
 ### 🔄 In Development
 
@@ -187,7 +207,9 @@ project/
 |-------------|-------------|-------------|
 | `pandas` | 2.0.3 | Data manipulation and analysis |
 | `numpy` | 1.24.4 | Numerical computing |
-| `scikit-learn` | 1.3.2 | Machine learning algorithms |
+| `scikit-learn` | 1.3.2 | ML algorithms, GridSearchCV, metrics |
+| `xgboost` | Latest | Extreme Gradient Boosting algorithm |
+| `catboost` | Latest | Gradient boosting for categorical features |
 | `seaborn` | 0.13.2 | Statistical data visualization |
 | `matplotlib` | 3.7.5 | Plotting and visualization |
 | `dill` | Latest | Advanced object serialization |
