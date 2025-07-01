@@ -9,6 +9,9 @@
 
 > A comprehensive machine learning project that predicts student math scores based on various demographic and educational factors. This project demonstrates end-to-end ML pipeline implementation with industry best practices.
 
+## 🚀 **[TRY THE LIVE DEMO →](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com/predictdata)**
+🎯 **88.15% Accuracy** | 🌐 **Live on AWS** | 🔄 **Auto-Deploy from GitHub**
+
 ## 📊 Project Overview
 
 This project analyzes student performance data to predict math scores using various features such as:
@@ -152,7 +155,7 @@ project/
   - Interactive web interface for real-time predictions
   - RESTful API endpoints for model inference
   - **Premium UI/UX** with modern design language
-  - **Live at**: `http://localhost:5000` 🌐
+  - **Live at**: [Production URL](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com/predictdata) 🌐
 - **Prediction Pipeline** (`src/pipeline/prediction_pipeline.py`):
   - `PredictPipeline`: Automated inference workflow with model and preprocessor loading
   - `CustomData`: Data preprocessing and validation class
@@ -424,7 +427,9 @@ option_settings:
 ### **🎯 Production Access**
 
 #### **Live Application URL**
-Your ML application is accessible at your **Elastic Beanstalk environment URL**
+🌐 **[LIVE DEMO: Student Performance Predictor](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com/predictdata)**
+
+Your ML application is accessible at: `http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com/predictdata`
 
 #### **Features Available in Production**
 - **🤖 Real-time ML Predictions**: Student performance scoring
@@ -495,7 +500,7 @@ Your ML application is accessible at your **Elastic Beanstalk environment URL**
 
 **👨‍💻 Developer**: Jagadeesh  
 **📧 Email**: jagadeesh@gmail.com  
-**🌐 Live Application**: Available on AWS Elastic Beanstalk  
+**🌐 Live Application**: [http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com/predictdata](http://studentperformance-env-1.eba-awp2ttgs.us-east-1.elasticbeanstalk.com/predictdata)  
 **📂 Repository**: [GitHub - Student Performance Predictor](https://github.com/jagadeshchilla/Student-Performance-Predictor)
 
 ---
